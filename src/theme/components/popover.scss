@@ -1,0 +1,10 @@
+.popover-information {
+    --background: var(--ion-color-grey-25) !important;
+    --box-shadow: none !important;
+    --offset-x: -22px !important;
+    --offset-y: 4px !important;
+}
+
+ion-popover.popover-information::part(arrow) {
+    --offset-x: 0px !important;
+}

@@ -1,0 +1,24 @@
+.mt-alert {
+  --width: 100%;
+  --height: fit-content;
+  --border-radius: 8px;
+  padding: 124px 16px 16px 16px;
+  display: flex !important;
+  align-items: normal !important;
+
+  .ion-page {
+    display: block !important;
+    position: static !important;
+    contain: none !important;
+  }
+}
+
+.mt-alert-2 {
+  --background: rgba(0, 25, 80, 0.3) !important;
+  align-items: center !important;
+  display: flex !important;
+  height: 100% !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0px !important;
+}

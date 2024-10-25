@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .content-wc {
+    width: 800px;
+    height: 600px;
+  }
+}

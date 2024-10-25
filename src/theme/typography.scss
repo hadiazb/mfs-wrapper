@@ -1,0 +1,279 @@
+/** font H1 c**/
+
+@mixin title-h1 {
+  font-family: var(--ion-font-family);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  line-height: 40px;
+}
+
+.title-h1 {
+  @include title-h1;
+}
+
+/** font H2 c**/
+
+.title-h2 {
+  font-family: var(--ion-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 28px;
+}
+
+/** font H3 c**/
+
+.title-h3 {
+  font-family: var(--ion-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  line-height: 23px;
+}
+
+.title-h3 {
+  &.bold {
+    font-weight: 700;
+  }
+}
+
+/** font SubTitle 1 Bold **/
+
+@mixin subtitle-1-bold {
+  font-family: var(--ion-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+  line-height: 19px;
+}
+
+.subtitle-1-bold {
+  @include subtitle-1-bold;
+}
+
+/** font SubTitle **/
+
+@mixin subtitle-1 {
+  font-family: var(--ion-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  line-height: 19px;
+}
+
+.subtitle-1 {
+  @include subtitle-1;
+}
+
+@mixin subtitle-2 {
+  font-family: var(--ion-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+.subtitle-2 {
+  @include subtitle-2;
+}
+
+.subtitle-2-bold {
+  font-weight: 700;
+  font-family: var(--ion-font-family);
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  line-height: 16px !important;
+}
+
+/** font Body Bold **/
+
+@mixin body-1-bold {
+  font-family: var(--ion-font-family);
+  font-size: 14px !important;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 16px !important;
+}
+
+.body-1-bold {
+  @include body-1-bold;
+}
+
+/** font Body **/
+
+@mixin body-1 {
+  font-family: var(--ion-font-family);
+  font-size: 14px !important;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 16px;
+}
+
+.body-1 {
+  @include body-1;
+}
+
+/** AT-Link **/
+
+.at-link {
+  font-family: var(--ion-font-family);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 14px;
+}
+
+/** Caption **/
+
+@mixin caption {
+  font-family: var(--ion-font-family);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 14px;
+}
+
+.caption {
+  @include caption;
+}
+
+.title-h1,
+.title-h2,
+.title-h3,
+.subtitle-1,
+.subtitle-1-bold,
+.subtitle-2,
+.subtitle-2-bold,
+.body-1,
+.body-1-bold,
+.small-text,
+.small-text-bold,
+.at-link,
+.caption {
+  &.primary {
+    color: var(--ion-color-primary) !important;
+  }
+
+  &.danger {
+    color: var(--ion-color-danger) !important;
+  }
+
+  &.red {
+    color: var(--ion-color-danger) !important;
+  }
+
+  &.secondary {
+    color: var(--ion-color-secondary) !important;
+  }
+
+  &.white {
+    color: var(--ion-color-white) !important;
+  }
+
+  &.highlight {
+    color: var(--ion-color-highlight) !important;
+  }
+
+  &.success {
+    color: var(--ion-color-success) !important;
+  }
+
+  &.warning {
+    color: var(--ion-color-warning) !important;
+  }
+
+  &.grey-60 {
+    color: var(--ion-color-grey-60) !important;
+  }
+
+  &.grey-70 {
+    color: var(--ion-color-grey-70) !important;
+  }
+
+  &.grey-80 {
+    color: var(--ion-color-grey-80) !important;
+  }
+
+  &.grey-85 {
+    color: var(--ion-color-grey-85) !important;
+  }
+
+  &.grey-90 {
+    color: var(--ion-color-grey-90) !important;
+  }
+}
+
+a.secondary {
+  color: var(--ion-color-secondary);
+}
+
+.small-text {
+  font-family: var(--ion-font-family);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 12px;
+}
+
+.small-text-bold {
+  font-family: var(--ion-font-family);
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.small-text-promotion {
+  font-family: var(--ion-font-family);
+  font-size: 10px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.7px;
+}
+
+.text-primary {
+  color: var(--ion-color-primary) !important;
+}
+
+.text-danger {
+  color: var(--ion-color-danger) !important;
+}
+
+.text-red {
+  color: var(--ion-color-danger) !important;
+}
+
+.text-secondary {
+  color: var(--ion-color-secondary) !important;
+}
+
+.text-white {
+  color: var(--ion-color-white) !important;
+}
+
+.text-highlight {
+  color: var(--ion-color-highlight) !important;
+}
+
+.text-success {
+  color: var(--ion-color-success) !important;
+}
+
+.text-grey-60 {
+  color: var(--ion-color-grey-60) !important;
+}
+
+.text-grey-70 {
+  color: var(--ion-color-grey-70) !important;
+}
+
+.text-grey-80 {
+  color: var(--ion-color-grey-80) !important;
+}
+
+.text-grey-85 {
+  color: var(--ion-color-grey-85) !important;
+}
+
+.text-grey-90 {
+  color: var(--ion-color-grey-90) !important;
+}

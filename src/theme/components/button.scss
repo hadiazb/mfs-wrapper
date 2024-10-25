@@ -1,0 +1,22 @@
+ion-button {
+  --box-shadow: none;
+}
+
+ion-button.secondary {
+  --background: var(--ion-color-secondary);
+}
+
+ion-button.disabled {
+  --background: var(--ion-color-grey-20);
+  --color: var(--ion-color-grey-60);
+}
+
+ion-button.recharges-packages {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  height: 14px;
+  letter-spacing: 0.4px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

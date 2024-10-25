@@ -1,0 +1,28 @@
+.ab-feed {
+    background-color: var(--ion-color-backgroundStandard) !important;
+    box-shadow: none !important;
+    height: 100% !important;
+    width: 100% !important;
+    .ab-feed-buttons-wrapper {
+        box-shadow: none !important;
+        display: none !important;
+    }
+    .ab-feed-body {
+        border: none !important;
+        padding: 16px 16px 0px 16px !important;
+        .ab-card {
+            margin-bottom: 16px !important;
+            .ab-close-button {
+                opacity: 1 !important;
+                padding: 5px !important;
+            }
+        }
+    }
+}
+
+
+body>.ab-feed {
+    display: none !important;
+    height: 0px !important;
+    width: 0px !important;
+}

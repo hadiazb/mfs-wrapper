@@ -1,0 +1,15 @@
+ion-item {
+    ion-icon[slot="start"]{
+        margin-right: 8px;
+    }
+
+    ion-radio[slot="start"] {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    ion-checkbox[slot="start"] {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+}

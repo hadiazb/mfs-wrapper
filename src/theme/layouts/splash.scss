@@ -1,0 +1,31 @@
+@import "src/theme/gap.scss";
+
+.splash-layout {
+  background: var(--ion-color-primary);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include flex-gap(30px, 'column');
+
+  .logo {
+    width: 35%;
+  }
+
+  .loading {
+    font-size: 50px;
+    animation: rotation 600ms infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(359deg);
+    }
+  }
+}

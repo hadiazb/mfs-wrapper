@@ -1,0 +1,28 @@
+.content-slide {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 16px 0px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card-slide-custom {
+        white-space: nowrap;
+        margin-left: 8px;
+        position: relative;
+        border-radius: var(--radius-sm);
+        background: var(--ion-color-white);
+        padding: 16px;
+        box-shadow: var(--strong-shadow);
+        height: 60px;
+    }
+
+    .card-slide-custom:first-child {
+        margin-left: 16px;
+    }
+    .card-slide-custom:last-child {
+        margin-right: 16px;
+    }
+}

@@ -1,0 +1,23 @@
+@import "src/theme/typography.scss";
+
+.mt-select-popover {
+  --background: #3c424d;
+  --ion-item-background: #3c424d;
+  --ion-item-color: var(--ion-color-white);
+  --offset-y: 5px;
+
+  ion-item {
+    @include subtitle-2;
+    --border-style: none;
+    --min-height: auto;
+  }
+
+  ion-item::part(native) {
+    flex-direction: row-reverse;
+    --padding-start: 0px;
+  }
+
+  ion-radio {
+    --color-checked: var(--ion-color-white);
+  }
+}

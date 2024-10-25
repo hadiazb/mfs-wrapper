@@ -1,0 +1,207 @@
+@import '/src/theme/typography.scss';
+@import 'src/theme/gap.scss';
+
+ion-item.mt-textarea-form{
+    width: 100% !important;
+    &.item-interactive.ion-valid {
+        --highlight-background:var(--ion-color-grey-60) !important;
+    } 
+ 
+    &.ion-untouched {
+        &:not(.item-has-focus) {
+            --border-color: var(--ion-color-grey-60) !important;
+            --color: var(--ion-color-grey-60) !important;
+        }
+        ion-textarea {
+            opacity: 1 !important;
+            margin-top: 0;
+        }
+        &.item-has-value {
+            --border-color: var(--ion-color-grey-60) !important;
+            --color: var(--ion-color-grey-80) !important;
+        }
+        .fake-placeholder-initial-value {
+            color: var(--ion-color-grey-80) !important;
+        }
+    }
+    &.ion-invalid {
+        &:not(.ion-untouched) {
+            --border-color: var(--ion-color-danger) !important;
+            --color: var(--ion-color-danger) !important;
+            ion-textarea {
+                --color: var(--ion-color-danger) !important;
+                --placeholder-opacity: 1 !important;
+            }
+            ion-label {
+                color: var(--ion-color-danger) !important;
+                max-width: -webkit-min-content !important;
+                max-width: -moz-min-content!important;
+                max-width: min-content !important;
+            }
+        }
+        &.item-interactive.ion-invalid {
+            --highlight-height: 1px;
+            --highlight-background: var(--ion-color-danger) !important;
+        }
+    }
+    &.item-has-focus {
+        &.ion-untouched {
+            --border-color: var(--ion-color-highlight) !important;
+            --color: var(--ion-color-highlight) !important;
+            ion-textarea {
+                --color: var(--ion-color-grey-80) !important;
+                --placeholder-opacity: 1 !important;
+            }
+            ion-label {
+                color: var(--ion-color-highlight) !important;
+            }
+        }
+    }
+    &.ion-valid {
+        &.ion-untouched {
+            &:not(.item-has-focus) {
+                --border-color: var(--ion-color-grey-60) !important;
+                --color: var(--ion-color-grey-60) !important;
+                ion-textarea {
+                    --color: var(--ion-color-grey-60) !important;
+                    --placeholder-opacity: 1 !important;
+                }
+                ion-label {
+                    color: var(--ion-color-grey-60) !important;
+                }
+            }
+        }
+        --border-color: var(--ion-color-grey-80) !important;
+        --color: var(--ion-color-grey-80) !important;
+        ion-textarea {
+            --color: var(--ion-color-grey-80) !important;
+        }
+        ion-label {
+            color: var(--ion-color-grey-80) !important;
+        }
+    }
+    &.item-interactive-disabled[aria-disabled="true"] {
+        --border-color: var(--ion-color-grey-60) !important;
+        --background: var(--ion-color-grey-20) !important;
+        ion-label {
+            --color: var(--ion-color-grey-60) !important;
+            opacity: 1 !important;
+        }
+    }
+    &.no-ion-label {
+        .icon-start {
+            margin-right: 8px !important;
+            margin-left: -4px !important;
+        }
+        .icon-end {
+            margin-right: 2px !important;
+        }
+        &:not(.item-has-focus) {
+            .fake-placeholder {
+                color: var(--ion-color-grey-60) !important;
+            }
+        }
+    }
+
+    ion-label {
+        height: 19px !important;
+        min-height: 19px !important;
+    }
+    .label-floating {
+        -webkit-transform: translateY(-6px) scale(0.75) !important;
+        transform: translateY(-6px) scale(0.75) !important;
+        transform: translateY(-6px) scale(0.75);
+        position: relative;
+        background-color: var(--ion-item-background, var(--ion-background-color, #fff));
+        overflow: visible;
+        z-index: 3;
+        max-width: -webkit-min-content !important;
+        max-width: -moz-min-content!important;
+        max-width: min-content !important;
+    }
+    &.item-has-value,
+    &.item-has-focus {
+        //--padding-start: 8px !important;
+        ion-textarea {
+            --placeholder-color: var(--ion-color-grey-60) !important;
+            --placeholder-opacity: 1 !important;
+            margin-left: -4px !important;
+            transform: translateY(-10px) !important;
+        }
+        &.no-ion-label {
+            --inner-padding-end: 6px !important;
+            ion-textarea {
+               margin-left: -4px !important;
+                transform: translateY(0px) !important;
+            }
+            ion-icon {
+                height: 24px;
+                min-width: 24px;
+                width: 24px;
+            }
+            ion-buttons {
+                margin: 0px !important;
+                ion-button {
+                    --padding-end: 0px;
+                    --padding-start: 0px;
+                    --ripple-color: transparent !important;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+    &.item-has-value {
+        ion-label {
+            margin-left: 0px !important;
+        }
+    }
+    &:not(.item-has-focus) {
+        ion-label {
+            margin-left: -4px;
+        }
+        &.no-ion-label {
+            --inner-padding-end: 6px !important;
+            ion-textarea {
+                --placeholder-color: var(--ion-color-grey-60) !important;
+                --placeholder-opacity: 1 !important;
+                margin-left: -4px !important;
+                transform: translateY(0px) !important;
+            }
+            ion-icon {
+                height: 24px;
+                min-width: 24px;
+                width: 24px;
+            }
+            ion-buttons {
+                margin: 0px !important;
+                ion-button {
+                    --padding-end: 0px;
+                    --padding-start: 0px;
+                    --ripple-color: transparent !important;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+    &.item-has-icon-start {
+        &.item-has-focus {
+            ion-label {
+                transform: translateX(-28px) translateY(-6px) scale(0.75) !important;
+            }
+        }
+        &.item-has-value {
+            ion-label {
+                transform: translateX(-28px) translateY(-6px) scale(0.75) !important;
+            }
+        }
+    }
+    .icon-start {
+        margin-left: -4px !important;
+    }
+}
+
+ion-item.mt-textarea-form:not(:nth-child(1)) {
+    margin-top: 16px !important;
+}
+
+

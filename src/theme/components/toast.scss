@@ -1,0 +1,47 @@
+ion-toast.custom-toast {
+  --background: #FFFFFF;
+  --color: #00000A;
+  --border-radius: none;
+  --start: 0;
+  --end: 0;
+  margin-top: -8px !important;
+}
+
+ion-toast.custom-toast::part(container) {
+  border-bottom-style: solid;
+  border-width: 4px;
+}
+
+ion-toast.custom-toast.danger::part(container) {
+  border-color: var(--ion-color-danger);
+}
+
+ion-toast.custom-toast.success::part(container) {
+  border-color: var(--ion-color-success);
+}
+
+ion-toast.custom-toast.warning::part(container) {
+  border-color: var(--ion-color-warning);
+}
+
+ion-toast.custom-toast.highlight::part(container) {
+  border-color: var(--ion-color-highlight);
+}
+
+ion-toast.custom-toast::part(message) {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+
+ion-toast.custom-toast::part(icon) {
+  font-size: 32px;
+}
+
+ion-toast.custom-toast::part(button) {
+  color: var(--ion-color-primary);
+}
+
+ion-toast.custom-toast.custom-toast-button {
+  --color: red;
+}

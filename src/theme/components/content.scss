@@ -1,0 +1,11 @@
+ion-content {
+    --background: var(--ion-color-background-standard);
+}
+
+ion-content.white {
+    --background: var(--ion-color-white);
+}
+
+ion-content.transparent {
+    --background: transparent;
+}

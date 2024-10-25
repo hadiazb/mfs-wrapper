@@ -1,0 +1,41 @@
+@import "/src/theme/gap.scss";
+
+.swiper {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px 16px 24px 16px;
+}
+
+.swiper-detail {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px 0px 20px 0px;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    position: static;
+}
+
+.swiper-slide {
+  height: auto !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--ion-color-grey-25) !important;
+    height: 6px;
+    margin: 0px 0px 0px 3px !important;
+    opacity: 1;
+    padding: 0;
+    width: 6px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--ion-color-grey-60) !important;
+}
+
+.swiper-pagination-lock {
+    display: none !important;
+}

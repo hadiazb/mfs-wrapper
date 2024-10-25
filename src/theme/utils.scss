@@ -1,0 +1,25 @@
+@import "/src/theme/gap.scss";
+
+.flex {
+    display: flex;
+
+    &.flex-col {
+        flex-direction: column !important;
+    }
+
+    &.flex-row {
+        flex-direction: row;
+    }
+
+    &.flex-col.gap-4 {
+        @include flex-gap(4px, 'column');
+    }
+
+    &.flex-row.gap-4 {
+        @include flex-gap(4px, 'row');
+    }
+}
+
+.font-size-16 {
+    font-size: 16px;
+}

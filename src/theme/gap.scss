@@ -1,0 +1,45 @@
+@use "sass:math";
+@use "sass:list";
+
+@mixin flex-gap($gap, $direction) {
+    $gap-y: list.nth($gap, 1);
+    $gap-x: $gap-y;
+
+    @if (list.length($gap)==2) {
+        $gap-x: list.nth($gap, 2);
+    }
+
+    @if($direction=='row') {
+        >* {
+            margin-right: $gap-x  !important;
+
+        }
+
+        >:last-child {
+            margin-right: 0 !important;
+
+        }
+    }
+
+    @if($direction=='column') {
+        >* {
+            margin-bottom: $gap-y  !important;
+        }
+
+        >:last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+@mixin grid-gap($gapX, $gapY) {
+
+    margin-right: - $gapX  !important;
+    margin-bottom: - $gapY  !important;
+
+    >* {
+        margin-right: $gapX  !important;
+        margin-bottom: $gapY  !important;
+    }
+
+}

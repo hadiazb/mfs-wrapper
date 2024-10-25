@@ -1,0 +1,21 @@
+ion-accordion-group {
+    box-shadow: var(--main-shadow);
+    border-radius: 8px;
+}
+
+.ion-accordion-toggle-icon {
+    font-size: 24px !important;
+    margin: 0;
+}
+
+ion-accordion.accordion-prevent-collapse::part(header expanded) {
+    pointer-events: none;
+}
+
+ion-accordion.accordion-prevent-collapse {
+    ion-item.hide-icon-collapse {
+        .ion-accordion-toggle-icon {
+            display: none;
+        }
+    }
+}

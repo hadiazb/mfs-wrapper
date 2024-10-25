@@ -1,0 +1,9 @@
+@mixin divider($color) {
+    >* {
+        border-bottom: 1px solid $color;
+    }
+
+    >:last-child {
+        border-bottom: none;
+    }
+}
