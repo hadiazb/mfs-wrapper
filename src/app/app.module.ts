@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IonicModule } from '@ionic/angular';
 import { MfsWalletComponent } from './components/mfs-wallet/mfs-wallet.component';
+import { SetPropsComponent } from './components/set-props/set-props.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { MfsWalletComponent } from './components/mfs-wallet/mfs-wallet.component
       mode: 'md',
     }),
     MfsWalletComponent,
+    SetPropsComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

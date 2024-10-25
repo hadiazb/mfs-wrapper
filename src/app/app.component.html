@@ -6,7 +6,7 @@
   </ion-header>
   <ion-content>
     <div class="content">
-      <ion-button expand="none" (click)="onOpenAndHideWC()"> Open </ion-button>
+      <app-set-props *ngIf="!showWC"></app-set-props>
 
       <ng-container *ngIf="showWC">
         <div class="content-wc">

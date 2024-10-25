@@ -1,0 +1,33 @@
+<form class="mb-32" [formGroup]="form!" (submit)="onSubmit()">
+  <ion-item fill="outline" class="mt-input-form mb-8">
+    <ion-label mode="md" position="floating">
+      Ingresa la linea de la billetra tigo money
+    </ion-label>
+    <ion-input
+      formControlName="id"
+      placeholder="Ingresa la linea de la billetra tigo money"
+    ></ion-input>
+  </ion-item>
+  <ion-item fill="outline" class="mt-input-form mb-8">
+    <ion-label mode="md" position="floating"> Plataforma </ion-label>
+    <ion-input formControlName="plataform" placeholder="Plataforma"></ion-input>
+  </ion-item>
+  <ion-item fill="outline" class="mt-input-form mb-8">
+    <ion-label mode="md" position="floating"> Ingresa device ID </ion-label>
+    <ion-input
+      formControlName="deviceId"
+      placeholder="Ingresa device ID"
+    ></ion-input>
+  </ion-item>
+  <ion-item fill="outline" class="mt-input-form">
+    <ion-label mode="md" position="floating">
+      Ingrese un nuevo token de MiTigo
+    </ion-label>
+    <ion-textarea
+      formControlName="idToken"
+      placeholder="Ingrese un nuevo token de MiTigo"
+    ></ion-textarea>
+  </ion-item>
+
+  <ion-button expand="none" type="submit"> Open </ion-button>
+</form>
