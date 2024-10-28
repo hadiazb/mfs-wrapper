@@ -38,7 +38,6 @@ export class SetPropsComponent implements OnInit {
 
   ngOnInit(): void {
     this.wcData = this.initWcService.wcData;
-
     this.buildForm();
   }
 
@@ -59,9 +58,8 @@ export class SetPropsComponent implements OnInit {
   }
 
   private buildForm(): void {
-    console.log('this.initWcService?.wcData  ', this.initWcService?.wcData);
     this.form = this.fb.group({
-      idToken: ['', Validators.required],
+      idToken: [localStorage.getItem('IdToken') ?? '', Validators.required],
       id: [this.initWcService?.wcData?.id ?? '30036470'],
       plataform: [this.initWcService?.wcData?.plataform ?? 'web'],
       deviceId: [
