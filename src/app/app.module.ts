@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { IonicModule } from '@ionic/angular';
 import { MfsWalletComponent } from './components/mfs-wallet/mfs-wallet.component';
 import { SetPropsComponent } from './components/set-props/set-props.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,7 @@ import { SetPropsComponent } from './components/set-props/set-props.component';
     }),
     MfsWalletComponent,
     SetPropsComponent,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   showWC: boolean = false;
 
   constructor(private initWcService: InitWcService) {}
+
   ngOnInit(): void {
     this.initWcService.showWC$.subscribe((show) => {
       this.showWC = show;
